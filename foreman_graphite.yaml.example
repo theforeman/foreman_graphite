@@ -2,10 +2,10 @@
 # Copy to config/settings.plugins.d/foreman_graphite.yaml
 :graphite:
   :server: graphite:2003
-    # results are aggregated in n seconds slices, defaults to 60
-    :slice: 60
-    # send to graphite every n seconds - defaults to 60
-    :interval: 60
-    # set the max age in seconds for records reanimation, defaults to  4 * 60 * 60
-    :cache: 4 * 60 * 60
+  # results are aggregated in n seconds slices, defaults to 60
+  :slice: 60
+  # send to graphite every n seconds - defaults to 60
+  :interval: 60
+  # set the max age in seconds for records reanimation, defaults to  4 * 60 * 60
+  :cache: 4 * 60 * 60
 
