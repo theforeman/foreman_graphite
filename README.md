@@ -4,7 +4,7 @@ Adds graphite support for [Foreman](http://theforeman.org).
 
 This Foreman plugin allows to use graphite to track performance metrics of your foreman instances.
 
-You will need to install a graphite instance to use this plugin.
+You will need to install a graphite instance to use this plugin and a Foreman version *higher* than 1.6 (> 1.6)
 
 ## Configuration
 
