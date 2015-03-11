@@ -15,12 +15,6 @@ Example config file:
 ```yaml
 :graphite:
   :server: graphite:2003
-  # results are aggregated in n seconds slices, defaults to 0
-  #:slice: 60
-  # send to graphite every n seconds - defaults to 0
-  #:interval: 60
-  # set the max age in seconds for records reanimation, defaults to  0
-  #:cache: 4 * 60 * 60
 ```
 
 ## Copyright
