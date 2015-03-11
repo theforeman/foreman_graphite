@@ -30,7 +30,11 @@ module ForemanGraphite
         value       = payload[:value]
         key_name    = "#{name.to_s.capitalize}.#{measurement}"
 
-        @graphite.metrics key_name => (value || 1)
+        timeout(3) do
+          @graphite.metrics key_name => (value || 1)
+        end
+      rescue => e
+        Rails.logger.warn "Failed to communicate with graphite: #{e}"
       end
 
       ActiveSupport::Notifications.subscribe /performance/ do |name, start, finish, id, payload|
